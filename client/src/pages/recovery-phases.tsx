@@ -37,34 +37,34 @@ export default function RecoveryPhases() {
     },
     {
       id: "short-term",
-      title: "Short-term Recovery",
-      subtitle: "2-30 Days",
-      description: "Building physical and emotional strength while developing daily routines. This phase involves active participation in therapy and preparation for longer-term recovery goals.",
-      duration: "2-30 days",
+      title: "Recuperación a Corto Plazo",
+      subtitle: "2-30 Días",
+      description: "Desarrollar fuerza física y emocional mientras se establecen rutinas diarias. Esta fase involucra participación activa en terapia y preparación para metas de recuperación a largo plazo.",
+      duration: "2-30 días",
       keyFocusAreas: [
-        "Participating in physical and occupational therapy",
-        "Managing emotional adjustment and mental health",
-        "Improving family communication and support systems",
-        "Developing sustainable daily routines",
-        "Setting realistic short-term recovery goals",
-        "Learning self-advocacy skills with medical team"
+        "Participar en terapia física y ocupacional",
+        "Manejar el ajuste emocional y la salud mental",
+        "Mejorar la comunicación familiar y sistemas de apoyo",
+        "Desarrollar rutinas diarias sostenibles",
+        "Establecer metas realistas de recuperación a corto plazo",
+        "Aprender habilidades de autodefensa con el equipo médico"
       ],
       color: "#7BB3A0",
       iconClass: "target"
     },
     {
       id: "long-term",
-      title: "Long-term Recovery",
-      subtitle: "1 Month and Beyond",
-      description: "Focusing on returning to meaningful activities, maintaining progress, and building long-term support networks. This phase emphasizes independence and community reintegration.",
-      duration: "1 month+",
+      title: "Recuperación a Largo Plazo",
+      subtitle: "1 Mes en Adelante",
+      description: "Enfoque en retornar a actividades significativas, mantener el progreso y construir redes de apoyo a largo plazo. Esta fase enfatiza la independencia y reintegración comunitaria.",
+      duration: "1 mes+",
       keyFocusAreas: [
-        "Developing independent living skills",
-        "Returning to work or meaningful activities",
-        "Building and maintaining support networks",
-        "Managing ongoing health and wellness",
-        "Preventing complications and setbacks",
-        "Advocating for continued care needs"
+        "Desarrollar habilidades de vida independiente",
+        "Retornar al trabajo o actividades significativas",
+        "Construir y mantener redes de apoyo",
+        "Manejar la salud y bienestar continuo",
+        "Prevenir complicaciones y retrocesos",
+        "Abogar por necesidades de atención continua"
       ],
       color: "#F4A261",
       iconClass: "users"
@@ -98,10 +98,10 @@ export default function RecoveryPhases() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
-              Recovery Phases
+              Fases de Recuperación
             </h1>
             <p className="text-xl opacity-90 max-w-3xl mx-auto">
-              Understanding each phase of your recovery journey helps you prepare, set realistic expectations, and celebrate progress along the way.
+              Entender cada fase de tu proceso de recuperación te ayuda a prepararte, establecer expectativas realistas y celebrar el progreso en el camino.
             </p>
           </div>
         </div>
@@ -151,7 +151,7 @@ export default function RecoveryPhases() {
                           {phase.duration}
                         </Badge>
                         <Badge variant="outline">
-                          Phase {phases.findIndex(p => p.id === phase.id) + 1} of {phases.length}
+                          Fase {phases.findIndex(p => p.id === phase.id) + 1} de {phases.length}
                         </Badge>
                       </div>
                     </CardContent>
@@ -161,7 +161,7 @@ export default function RecoveryPhases() {
                     <CardHeader>
                       <CardTitle className="flex items-center">
                         <Target className="h-5 w-5 mr-2 text-secondary" />
-                        Key Focus Areas
+                        Áreas de Enfoque Clave
                       </CardTitle>
                     </CardHeader>
                     <CardContent>
@@ -188,10 +188,10 @@ export default function RecoveryPhases() {
                     <CardHeader>
                       <CardTitle className="flex items-center">
                         <Book className="h-5 w-5 mr-2 text-primary" />
-                        Resources for {phase.title}
+                        Recursos para {phase.title}
                       </CardTitle>
                       <CardDescription>
-                        Educational materials specifically curated for this recovery phase
+                        Materiales educativos específicamente curados para esta fase de recuperación
                       </CardDescription>
                     </CardHeader>
                     <CardContent>
@@ -209,8 +209,8 @@ export default function RecoveryPhases() {
                       ) : (
                         <div className="text-center py-8 text-muted-foreground">
                           <Book className="h-12 w-12 mx-auto mb-4 opacity-50" />
-                          <p>Resources for this phase are being prepared.</p>
-                          <p className="text-sm">Check back soon for updated content.</p>
+                          <p>Los recursos para esta fase están siendo preparados.</p>
+                          <p className="text-sm">Vuelve pronto para contenido actualizado.</p>
                         </div>
                       )}
                       
