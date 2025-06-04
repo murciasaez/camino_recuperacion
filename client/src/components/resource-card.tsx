@@ -27,26 +27,26 @@ export default function ResourceCard({ resource, onClick, showPhase = true }: Re
   const getCategoryColor = (category: string) => {
     switch (category) {
       case 'symptom-guides':
-        return 'bg-blue-100 text-blue-800 hover:bg-blue-200';
+        return 'bg-blue-100 text-blue-900 hover:bg-blue-200 border border-blue-200';
       case 'downloadable-guides':
-        return 'bg-green-100 text-green-800 hover:bg-green-200';
+        return 'bg-green-100 text-green-900 hover:bg-green-200 border border-green-200';
       case 'checklists':
-        return 'bg-orange-100 text-orange-800 hover:bg-orange-200';
+        return 'bg-orange-100 text-orange-900 hover:bg-orange-200 border border-orange-200';
       default:
-        return 'bg-gray-100 text-gray-800 hover:bg-gray-200';
+        return 'bg-gray-100 text-gray-900 hover:bg-gray-200 border border-gray-200';
     }
   };
 
   const getPhaseColor = (phase: string) => {
     switch (phase) {
       case 'immediate':
-        return 'bg-red-100 text-red-800';
+        return 'bg-red-100 text-red-900 border border-red-200';
       case 'short-term':
-        return 'bg-yellow-100 text-yellow-800';
+        return 'bg-amber-100 text-amber-900 border border-amber-200';
       case 'long-term':
-        return 'bg-green-100 text-green-800';
+        return 'bg-green-100 text-green-900 border border-green-200';
       default:
-        return 'bg-gray-100 text-gray-800';
+        return 'bg-gray-100 text-gray-900 border border-gray-200';
     }
   };
 
@@ -112,7 +112,9 @@ export default function ResourceCard({ resource, onClick, showPhase = true }: Re
               onClick={(e) => {
                 e.stopPropagation();
                 // Handle download
-                window.open(resource.downloadUrl, '_blank');
+                if (resource.downloadUrl) {
+                  window.open(resource.downloadUrl, '_blank');
+                }
               }}
             >
               <Download className="h-4 w-4" />

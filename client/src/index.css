@@ -5,25 +5,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 :root {
-  --background: 248 249 250; /* #F8F9FA */
-  --foreground: 45 55 72; /* #2D3748 */
-  --muted: 240 4.8% 95.9%;
-  --muted-foreground: 74 86 104; /* #4A5568 */
+  --background: 255 255 255; /* #FFFFFF */
+  --foreground: 15 23 42; /* #0F172A - Much darker for better contrast */
+  --muted: 248 250 252; /* #F8FAFC */
+  --muted-foreground: 51 65 85; /* #334155 - Darker for better readability */
   --popover: 0 0% 100%;
-  --popover-foreground: 45 55 72; /* #2D3748 */
+  --popover-foreground: 15 23 42; /* #0F172A */
   --card: 0 0% 100%;
-  --card-foreground: 45 55 72; /* #2D3748 */
+  --card-foreground: 15 23 42; /* #0F172A */
   --border: 226 14% 91%; /* #E2E8F0 */
   --input: 226 14% 91%; /* #E2E8F0 */
-  --primary: 207 90% 54%; /* #4A90B8 */
-  --primary-foreground: 211 100% 99%; /* #FCFEFF */
-  --secondary: 162 43% 65%; /* #7BB3A0 */
-  --secondary-foreground: 0 0% 100%;
-  --accent: 29 78% 61%; /* #F4A261 */
-  --accent-foreground: 0 0% 100%;
-  --destructive: 0 84.2% 60.2%;
-  --destructive-foreground: 60 9.1% 97.8%;
-  --ring: 207 90% 54%; /* #4A90B8 */
+  --primary: 207 90% 45%; /* #1E7DB8 - Darker primary for better contrast */
+  --primary-foreground: 255 255 255; /* #FFFFFF */
+  --secondary: 162 43% 55%; /* #5A9B87 - Darker secondary for better contrast */
+  --secondary-foreground: 255 255 255; /* #FFFFFF */
+  --accent: 29 78% 51%; /* #E6934A - Darker accent for better contrast */
+  --accent-foreground: 255 255 255; /* #FFFFFF */
+  --destructive: 0 84.2% 50.2%; /* Darker red for better contrast */
+  --destructive-foreground: 255 255 255;
+  --ring: 207 90% 45%; /* #1E7DB8 */
   --radius: 0.5rem;
   
   --chart-1: 207 90% 54%; /* #4A90B8 */
@@ -124,11 +124,43 @@
 
   /* Healthcare-specific styling */
   .emergency-banner {
-    background: linear-gradient(90deg, #fee2e2 0%, #fecaca 100%);
-    border-left: 4px solid #ef4444;
+    background: linear-gradient(90deg, #fef2f2 0%, #fee2e2 100%);
+    border-left: 4px solid #dc2626;
   }
   
   .recovery-gradient {
     background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--secondary)) 100%);
+  }
+
+  /* Enhanced text contrast */
+  .text-high-contrast {
+    color: hsl(15 23 42); /* Very dark slate */
+  }
+  
+  .text-medium-contrast {
+    color: hsl(51 65 85); /* Darker muted text */
+  }
+
+  /* Button improvements */
+  .btn-primary {
+    background: hsl(207 90% 35%);
+    color: white;
+    border: 2px solid hsl(207 90% 35%);
+  }
+  
+  .btn-primary:hover {
+    background: hsl(207 90% 30%);
+    border-color: hsl(207 90% 30%);
+  }
+  
+  .btn-secondary {
+    background: hsl(162 43% 45%);
+    color: white;
+    border: 2px solid hsl(162 43% 45%);
+  }
+  
+  .btn-secondary:hover {
+    background: hsl(162 43% 40%);
+    border-color: hsl(162 43% 40%);
   }
 }

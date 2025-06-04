@@ -175,12 +175,12 @@ export default function Contact() {
       <section className="emergency-banner py-4">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-center">
-            <AlertTriangle className="h-5 w-5 text-red-600 mr-3 flex-shrink-0" />
+            <AlertTriangle className="h-5 w-5 text-red-800 mr-3 flex-shrink-0" />
             <div className="text-center">
-              <p className="text-red-700 font-semibold">
+              <p className="text-red-900 font-bold">
                 Emergency: Call 911 | Crisis Support: 988 | Poison Control: 1-800-222-1222
               </p>
-              <p className="text-red-600 text-sm">
+              <p className="text-red-800 text-sm font-semibold">
                 For immediate medical emergencies or mental health crises, contact emergency services directly
               </p>
             </div>

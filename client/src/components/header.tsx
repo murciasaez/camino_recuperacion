@@ -30,8 +30,8 @@ export default function Header() {
       {/* Emergency Contact Banner */}
       <div className="emergency-banner px-4 py-3">
         <div className="max-w-7xl mx-auto flex items-center justify-center sm:justify-start">
-          <AlertTriangle className="h-4 w-4 text-red-600 mr-2 flex-shrink-0" />
-          <span className="text-red-700 text-sm font-medium text-center sm:text-left">
+          <AlertTriangle className="h-4 w-4 text-red-800 mr-2 flex-shrink-0" />
+          <span className="text-red-900 text-sm font-bold text-center sm:text-left">
             Emergency: Call 911 | Crisis Support: 988 | Poison Control: 1-800-222-1222
           </span>
         </div>

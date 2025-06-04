@@ -220,6 +220,8 @@ export class MemStorage implements IStorage {
     const resource: Resource = { 
       ...insertResource, 
       id,
+      featured: insertResource.featured ?? false,
+      downloadUrl: insertResource.downloadUrl ?? null,
       createdAt: new Date()
     };
     this.resources.set(id, resource);
@@ -263,7 +265,12 @@ export class MemStorage implements IStorage {
 
   async createSupportGroup(insertGroup: InsertSupportGroup): Promise<SupportGroup> {
     const id = this.currentSupportGroupId++;
-    const group: SupportGroup = { ...insertGroup, id };
+    const group: SupportGroup = { 
+      ...insertGroup, 
+      id,
+      schedule: insertGroup.schedule ?? null,
+      languages: insertGroup.languages ?? null
+    };
     this.supportGroups.set(id, group);
     return group;
   }
@@ -274,6 +281,7 @@ export class MemStorage implements IStorage {
     const request: ContactRequest = { 
       ...insertRequest, 
       id,
+      phone: insertRequest.phone ?? null,
       createdAt: new Date()
     };
     this.contactRequests.set(id, request);
