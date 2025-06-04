@@ -223,38 +223,38 @@ export default function Home() {
       <section className="py-20 bg-white scroll-animate">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-            Get Support When You Need It
+            Obtén Apoyo Cuando lo Necesites
           </h2>
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Our team is here to help you navigate your recovery journey with confidence and support.
+            Nuestro equipo está aquí para ayudarte a navegar tu camino de recuperación con confianza y apoyo.
           </p>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             <Card className="hover-lift">
               <CardHeader className="text-center">
                 <Heart className="h-8 w-8 text-primary mx-auto mb-2" />
-                <CardTitle className="text-lg">24/7 Support</CardTitle>
-                <CardDescription>Round-the-clock assistance when you need it most</CardDescription>
+                <CardTitle className="text-lg">Apoyo 24/7</CardTitle>
+                <CardDescription>Asistencia las 24 horas cuando más lo necesites</CardDescription>
               </CardHeader>
             </Card>
             <Card className="hover-lift">
               <CardHeader className="text-center">
                 <Users className="h-8 w-8 text-secondary mx-auto mb-2" />
-                <CardTitle className="text-lg">Expert Guidance</CardTitle>
-                <CardDescription>Medical professionals and recovery specialists</CardDescription>
+                <CardTitle className="text-lg">Orientación Experta</CardTitle>
+                <CardDescription>Profesionales médicos y especialistas en recuperación</CardDescription>
               </CardHeader>
             </Card>
             <Card className="hover-lift">
               <CardHeader className="text-center">
                 <Target className="h-8 w-8 text-accent mx-auto mb-2" />
-                <CardTitle className="text-lg">Personalized Care</CardTitle>
-                <CardDescription>Resources tailored to your recovery phase</CardDescription>
+                <CardTitle className="text-lg">Atención Personalizada</CardTitle>
+                <CardDescription>Recursos adaptados a tu fase de recuperación</CardDescription>
               </CardHeader>
             </Card>
           </div>
           <div className="mt-8">
             <Link href="/contact">
               <Button size="lg" className="bg-primary hover:bg-primary/90">
-                Contact Support Team
+                Contactar Equipo de Apoyo
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </Link>

@@ -20,17 +20,17 @@ export default function RecoveryPhases() {
   const phases: RecoveryPhase[] = [
     {
       id: "immediate",
-      title: "Immediate Recovery",
-      subtitle: "First 48 Hours",
-      description: "The critical first phase focuses on stabilization, basic orientation, and understanding your immediate care environment. This period involves intensive monitoring and establishing communication with your medical team.",
-      duration: "0-48 hours",
+      title: "Recuperación Inmediata",
+      subtitle: "Primeras 48 Horas",
+      description: "La primera fase crítica se enfoca en estabilización, orientación básica y comprensión de tu entorno de atención inmediata. Este período involucra monitoreo intensivo y establecimiento de comunicación con tu equipo médico.",
+      duration: "0-48 horas",
       keyFocusAreas: [
-        "Understanding your current condition and treatment plan",
-        "Meeting and communicating with your care team",
-        "Basic orientation to time, place, and situation",
-        "Managing immediate physical discomfort",
-        "Establishing family communication protocols",
-        "Learning about medical equipment and monitoring"
+        "Entender tu condición actual y plan de tratamiento",
+        "Conocer y comunicarte con tu equipo de atención",
+        "Orientación básica al tiempo, lugar y situación",
+        "Manejo de molestias físicas inmediatas",
+        "Establecer protocolos de comunicación familiar",
+        "Aprender sobre equipos médicos y monitoreo"
       ],
       color: "#4A90B8",
       iconClass: "heart"
