@@ -42,17 +42,17 @@ export default function Resources() {
   });
 
   const categories = [
-    { id: "all", label: "All Categories", icon: BookOpen },
-    { id: "symptom-guides", label: "Symptom Guides", icon: FileText },
-    { id: "checklists", label: "Recovery Checklists", icon: CheckSquare },
-    { id: "downloadable-guides", label: "Downloadable Guides", icon: Download },
+    { id: "all", label: "Todas las Categorías", icon: BookOpen },
+    { id: "symptom-guides", label: "Guías de Síntomas", icon: FileText },
+    { id: "checklists", label: "Listas de Verificación", icon: CheckSquare },
+    { id: "downloadable-guides", label: "Guías Descargables", icon: Download },
   ];
 
   const phases = [
-    { id: "all", label: "All Phases" },
-    { id: "immediate", label: "Immediate Recovery" },
-    { id: "short-term", label: "Short-term Recovery" },
-    { id: "long-term", label: "Long-term Recovery" },
+    { id: "all", label: "Todas las Fases" },
+    { id: "immediate", label: "Recuperación Inmediata" },
+    { id: "short-term", label: "Recuperación a Corto Plazo" },
+    { id: "long-term", label: "Recuperación a Largo Plazo" },
   ];
 
   const filteredResources = () => {
@@ -94,10 +94,10 @@ export default function Resources() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
-              Educational Resources
+              Recursos Educativos
             </h1>
             <p className="text-xl opacity-90 max-w-3xl mx-auto">
-              Comprehensive guides, checklists, and educational materials organized by your current recovery phase and specific needs.
+              Guías completas, listas de verificación y materiales educativos organizados por tu fase actual de recuperación y necesidades específicas.
             </p>
           </div>
         </div>

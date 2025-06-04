@@ -220,7 +220,7 @@ export default function RecoveryPhases() {
                             variant="outline"
                             onClick={() => setLocation(`/resources?phase=${phase.id}`)}
                           >
-                            View All {phase.title} Resources
+                            Ver Todos los Recursos de {phase.title}
                             <ArrowRight className="ml-2 h-4 w-4" />
                           </Button>
                         </div>
@@ -235,23 +235,23 @@ export default function RecoveryPhases() {
                     <CardContent className="p-6">
                       <h3 className="font-semibold text-foreground mb-3 flex items-center">
                         <Heart className="h-5 w-5 mr-2 text-red-500" />
-                        Remember During This Phase
+                        Recuerda Durante Esta Fase
                       </h3>
                       <div className="grid md:grid-cols-2 gap-4 text-sm text-muted-foreground">
                         <div>
                           <p className="mb-2">
-                            <strong>Be Patient:</strong> Recovery is a process that takes time. Every small step forward is progress worth celebrating.
+                            <strong>Ten Paciencia:</strong> La recuperación es un proceso que lleva tiempo. Cada pequeño paso adelante es un progreso que vale la pena celebrar.
                           </p>
                           <p>
-                            <strong>Communicate:</strong> Don't hesitate to ask questions or voice concerns with your care team and family.
+                            <strong>Comunícate:</strong> No dudes en hacer preguntas o expresar inquietudes con tu equipo de atención y familia.
                           </p>
                         </div>
                         <div>
                           <p className="mb-2">
-                            <strong>Stay Connected:</strong> Maintain relationships with family and friends who support your recovery journey.
+                            <strong>Mantente Conectado:</strong> Mantén relaciones con familiares y amigos que apoyen tu proceso de recuperación.
                           </p>
                           <p>
-                            <strong>Focus on Today:</strong> Take each day as it comes and focus on what you can control right now.
+                            <strong>Enfócate en Hoy:</strong> Toma cada día como viene y enfócate en lo que puedes controlar ahora mismo.
                           </p>
                         </div>
                       </div>
