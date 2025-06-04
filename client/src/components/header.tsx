@@ -11,11 +11,11 @@ export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const navigation = [
-    { href: "/", label: "Home" },
-    { href: "/recovery-phases", label: "Recovery Phases" },
-    { href: "/resources", label: "Resources" },
-    { href: "/family-support", label: "Family Support" },
-    { href: "/contact", label: "Contact" },
+    { href: "/", label: "Inicio" },
+    { href: "/recovery-phases", label: "Fases de Recuperación" },
+    { href: "/resources", label: "Recursos" },
+    { href: "/family-support", label: "Apoyo Familiar" },
+    { href: "/contact", label: "Contacto" },
   ];
 
   const handleSearch = (e: React.FormEvent) => {
@@ -32,7 +32,7 @@ export default function Header() {
         <div className="max-w-7xl mx-auto flex items-center justify-center sm:justify-start">
           <AlertTriangle className="h-4 w-4 text-red-800 mr-2 flex-shrink-0" />
           <span className="text-red-900 text-sm font-bold text-center sm:text-left">
-            Emergency: Call 911 | Crisis Support: 988 | Poison Control: 1-800-222-1222
+            Emergencia: Llame al 911 | Apoyo en Crisis: 988 | Control de Envenenamiento: 1-800-222-1222
           </span>
         </div>
       </div>
@@ -44,7 +44,7 @@ export default function Header() {
             {/* Logo */}
             <Link href="/" className="flex items-center space-x-2 hover:opacity-80 transition-opacity">
               <Heart className="h-8 w-8 text-primary" />
-              <span className="text-xl font-bold text-foreground">Recovery Path</span>
+              <span className="text-xl font-bold text-foreground">Camino de Recuperación</span>
             </Link>
 
             {/* Desktop Navigation */}
@@ -70,7 +70,7 @@ export default function Header() {
                 <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-muted-foreground" />
                 <Input
                   type="search"
-                  placeholder="Search resources..."
+                  placeholder="Buscar recursos..."
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
                   className="w-64 pl-10 focus:ring-2 focus:ring-primary focus:border-transparent"
@@ -93,7 +93,7 @@ export default function Header() {
                       <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-muted-foreground" />
                       <Input
                         type="search"
-                        placeholder="Search resources..."
+                        placeholder="Buscar recursos..."
                         value={searchQuery}
                         onChange={(e) => setSearchQuery(e.target.value)}
                         className="pl-10"
@@ -120,15 +120,15 @@ export default function Header() {
 
                     {/* Emergency Contacts */}
                     <div className="border-t pt-4 mt-6">
-                      <h3 className="font-semibold text-foreground mb-3">Emergency Contacts</h3>
+                      <h3 className="font-semibold text-foreground mb-3">Contactos de Emergencia</h3>
                       <div className="space-y-2 text-sm">
                         <div className="flex items-center space-x-2">
                           <Phone className="h-4 w-4 text-red-600" />
-                          <span>Emergency: 911</span>
+                          <span>Emergencia: 911</span>
                         </div>
                         <div className="flex items-center space-x-2">
                           <Phone className="h-4 w-4 text-blue-600" />
-                          <span>Crisis Support: 988</span>
+                          <span>Apoyo en Crisis: 988</span>
                         </div>
                       </div>
                     </div>
