@@ -20,45 +20,45 @@ export default function Home() {
   const recoveryPhases: RecoveryPhase[] = [
     {
       id: "immediate",
-      title: "Immediate Recovery",
-      subtitle: "0-48 hours",
-      description: "Focus on stabilization, basic orientation, and understanding your immediate care team.",
-      duration: "0-48 hours",
+      title: "Recuperación Inmediata",
+      subtitle: "0-48 horas",
+      description: "Enfoque en estabilización, orientación básica y comprensión de tu equipo de atención inmediata.",
+      duration: "0-48 horas",
       keyFocusAreas: [
-        "Understanding your condition",
-        "Meeting your care team",
-        "Basic communication strategies",
-        "Managing immediate symptoms"
+        "Entender tu condición",
+        "Conocer a tu equipo de atención",
+        "Estrategias básicas de comunicación",
+        "Manejo de síntomas inmediatos"
       ],
       color: "#4A90B8",
       iconClass: "fas fa-heart-pulse"
     },
     {
       id: "short-term",
-      title: "Short-term Recovery",
-      subtitle: "2-30 days",
-      description: "Building strength, developing routines, and preparing for the next phase of recovery.",
-      duration: "2-30 days",
+      title: "Recuperación a Corto Plazo",
+      subtitle: "2-30 días",
+      description: "Desarrollar fuerza, establecer rutinas y prepararse para la siguiente fase de recuperación.",
+      duration: "2-30 días",
       keyFocusAreas: [
-        "Physical therapy goals",
-        "Emotional adjustment",
-        "Family communication",
-        "Developing daily routines"
+        "Metas de terapia física",
+        "Ajuste emocional",
+        "Comunicación familiar",
+        "Desarrollo de rutinas diarias"
       ],
       color: "#7BB3A0",
       iconClass: "fas fa-chart-line"
     },
     {
       id: "long-term",
-      title: "Long-term Recovery",
-      subtitle: "1 month+",
-      description: "Returning to daily activities, ongoing support, and maintaining progress gains.",
-      duration: "1 month+",
+      title: "Recuperación a Largo Plazo",
+      subtitle: "1 mes+",
+      description: "Retorno a actividades diarias, apoyo continuo y mantenimiento de los logros obtenidos.",
+      duration: "1 mes+",
       keyFocusAreas: [
-        "Independent living skills",
-        "Community reintegration",
-        "Ongoing support networks",
-        "Long-term health management"
+        "Habilidades de vida independiente",
+        "Reintegración comunitaria",
+        "Redes de apoyo continuas",
+        "Manejo de salud a largo plazo"
       ],
       color: "#F4A261",
       iconClass: "fas fa-home"
@@ -68,24 +68,24 @@ export default function Home() {
   const resourceCategories: ResourceCategory[] = [
     {
       id: "symptom-guides",
-      title: "Symptom Guides",
-      description: "Detailed explanations of common symptoms with visual aids and management strategies.",
+      title: "Guías de Síntomas",
+      description: "Explicaciones detalladas de síntomas comunes con ayudas visuales y estrategias de manejo.",
       iconClass: "fas fa-file-medical",
       count: 12,
       color: "primary"
     },
     {
       id: "checklists",
-      title: "Recovery Checklists",
-      description: "Step-by-step checklists to track progress and ensure you don't miss important milestones.",
+      title: "Listas de Verificación",
+      description: "Listas paso a paso para seguir el progreso y asegurar que no pierdas hitos importantes.",
       iconClass: "fas fa-tasks",
       count: 8,
       color: "secondary"
     },
     {
       id: "downloadable-guides",
-      title: "Downloadable Guides",
-      description: "Comprehensive PDF guides you can print and share with your care team and family.",
+      title: "Guías Descargables",
+      description: "Guías completas en PDF que puedes imprimir y compartir con tu equipo médico y familia.",
       iconClass: "fas fa-download",
       count: 15,
       color: "accent"
@@ -100,20 +100,20 @@ export default function Home() {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-              Your Journey to Recovery Starts Here
+              Tu Camino hacia la Recuperación Comienza Aquí
             </h1>
             <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto opacity-90">
-              Expert-curated educational resources to guide ICU recovery patients and families through every phase of healing.
+              Recursos educativos curados por expertos para guiar a pacientes de UCI en recuperación y sus familias a través de cada fase de sanación.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/recovery-phases">
                 <Button size="lg" className="bg-white text-primary hover:bg-gray-100 font-semibold">
-                  Start Your Recovery Journey
+                  Comienza tu Camino de Recuperación
                 </Button>
               </Link>
               <Link href="/resources">
                 <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-primary font-semibold">
-                  Browse Resources
+                  Explorar Recursos
                 </Button>
               </Link>
             </div>
@@ -126,10 +126,10 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Recovery Phases
+              Fases de Recuperación
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Understanding your recovery journey helps you prepare for each phase and celebrate progress along the way.
+              Entender tu proceso de recuperación te ayuda a prepararte para cada fase y celebrar el progreso en el camino.
             </p>
           </div>
 
@@ -142,10 +142,10 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Educational Resources
+              Recursos Educativos
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Comprehensive guides, checklists, and educational materials organized by your current recovery phase.
+              Guías completas, listas de verificación y materiales educativos organizados por tu fase actual de recuperación.
             </p>
           </div>
 
@@ -167,7 +167,7 @@ export default function Home() {
                   <CardContent>
                     <Link href={`/resources?category=${category.id}`}>
                       <Button className="w-full">
-                        View Resources ({category.count})
+                        Ver Recursos ({category.count})
                       </Button>
                     </Link>
                   </CardContent>
@@ -182,7 +182,7 @@ export default function Home() {
               <CardHeader>
                 <CardTitle className="text-2xl flex items-center">
                   <Star className="h-6 w-6 text-yellow-500 mr-3" />
-                  Featured This Week
+                  Destacados de la Semana
                 </CardTitle>
               </CardHeader>
               <CardContent>
@@ -199,7 +199,7 @@ export default function Home() {
                         </p>
                         <Link href={`/resources/${resource.id}`}>
                           <Button variant="link" className="p-0 h-auto text-primary">
-                            Read More <ArrowRight className="ml-1 h-4 w-4" />
+                            Leer Más <ArrowRight className="ml-1 h-4 w-4" />
                           </Button>
                         </Link>
                       </div>
