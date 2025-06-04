@@ -193,10 +193,10 @@ export default function Contact() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-foreground mb-4">
-              Choose Your Preferred Contact Method
+              Elige tu Método de Contacto Preferido
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              We offer multiple ways to get in touch based on your needs and preferences. All methods are staffed by trained professionals.
+              Ofrecemos múltiples formas de ponerte en contacto según tus necesidades y preferencias. Todos los métodos están atendidos por profesionales capacitados.
             </p>
           </div>
 
@@ -239,18 +239,18 @@ export default function Contact() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-foreground mb-4">
-              Send Us a Message
+              Envíanos un Mensaje
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Fill out the form below and we'll get back to you as soon as possible. All information is kept confidential.
+              Completa el formulario a continuación y te responderemos lo antes posible. Toda la información se mantiene confidencial.
             </p>
           </div>
 
           <Card>
             <CardHeader>
-              <CardTitle>Contact Form</CardTitle>
+              <CardTitle>Formulario de Contacto</CardTitle>
               <CardDescription>
-                Please provide as much detail as possible to help us assist you effectively.
+                Por favor proporciona tantos detalles como sea posible para ayudarnos a asistirte eficazmente.
               </CardDescription>
             </CardHeader>
             <CardContent>
@@ -262,9 +262,9 @@ export default function Contact() {
                       name="name"
                       render={({ field }) => (
                         <FormItem>
-                          <FormLabel>Full Name *</FormLabel>
+                          <FormLabel>Nombre Completo *</FormLabel>
                           <FormControl>
-                            <Input placeholder="Enter your full name" {...field} />
+                            <Input placeholder="Ingresa tu nombre completo" {...field} />
                           </FormControl>
                           <FormMessage />
                         </FormItem>
@@ -276,9 +276,9 @@ export default function Contact() {
                       name="email"
                       render={({ field }) => (
                         <FormItem>
-                          <FormLabel>Email Address *</FormLabel>
+                          <FormLabel>Dirección de Email *</FormLabel>
                           <FormControl>
-                            <Input type="email" placeholder="Enter your email" {...field} />
+                            <Input type="email" placeholder="Ingresa tu email" {...field} />
                           </FormControl>
                           <FormMessage />
                         </FormItem>
