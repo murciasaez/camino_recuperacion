@@ -112,7 +112,7 @@ export default function Resources() {
               <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-muted-foreground" />
               <Input
                 type="search"
-                placeholder="Search resources..."
+                placeholder="Buscar recursos..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 className="pl-10"
@@ -123,7 +123,7 @@ export default function Resources() {
             <div className="flex flex-wrap gap-3 items-center">
               <Select value={selectedCategory} onValueChange={setSelectedCategory}>
                 <SelectTrigger className="w-[200px]">
-                  <SelectValue placeholder="Category" />
+                  <SelectValue placeholder="Categoría" />
                 </SelectTrigger>
                 <SelectContent>
                   {categories.map((category) => (
@@ -136,7 +136,7 @@ export default function Resources() {
 
               <Select value={selectedPhase} onValueChange={setSelectedPhase}>
                 <SelectTrigger className="w-[180px]">
-                  <SelectValue placeholder="Recovery Phase" />
+                  <SelectValue placeholder="Fase de Recuperación" />
                 </SelectTrigger>
                 <SelectContent>
                   {phases.map((phase) => (
@@ -153,12 +153,12 @@ export default function Resources() {
                 className="flex items-center"
               >
                 <Star className="h-4 w-4 mr-2" />
-                Featured
+                Destacados
               </Button>
 
               {activeFiltersCount > 0 && (
                 <Button variant="ghost" onClick={clearFilters}>
-                  Clear Filters ({activeFiltersCount})
+                  Limpiar Filtros ({activeFiltersCount})
                 </Button>
               )}
             </div>
@@ -187,7 +187,7 @@ export default function Resources() {
                       <Icon className="h-8 w-8 text-primary" />
                     </div>
                     <CardTitle className="text-lg">{category.label}</CardTitle>
-                    <Badge variant="secondary">{categoryResources.length} resources</Badge>
+                    <Badge variant="secondary">{categoryResources.length} recursos</Badge>
                   </CardHeader>
                 </Card>
               );
@@ -218,10 +218,10 @@ export default function Resources() {
             <>
               <div className="flex justify-between items-center mb-6">
                 <h2 className="text-2xl font-bold text-foreground">
-                  {searchQuery.trim() ? `Search Results` : 'All Resources'}
+                  {searchQuery.trim() ? `Resultados de Búsqueda` : 'Todos los Recursos'}
                 </h2>
                 <Badge variant="outline" className="text-sm">
-                  {filteredResources().length} {filteredResources().length === 1 ? 'resource' : 'resources'} found
+                  {filteredResources().length} {filteredResources().length === 1 ? 'recurso' : 'recursos'} encontrados
                 </Badge>
               </div>
               
@@ -239,13 +239,13 @@ export default function Resources() {
             <div className="text-center py-12">
               <BookOpen className="h-16 w-16 text-muted-foreground mx-auto mb-4" />
               <h3 className="text-xl font-semibold text-foreground mb-2">
-                No resources found
+                No se encontraron recursos
               </h3>
               <p className="text-muted-foreground mb-4">
-                Try adjusting your search terms or filters to find what you're looking for.
+                Intenta ajustar tus términos de búsqueda o filtros para encontrar lo que buscas.
               </p>
               <Button onClick={clearFilters} variant="outline">
-                Clear All Filters
+                Limpiar Todos los Filtros
               </Button>
             </div>
           )}
