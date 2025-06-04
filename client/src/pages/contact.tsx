@@ -46,16 +46,16 @@ export default function Contact() {
     },
     onSuccess: () => {
       toast({
-        title: "Message Sent Successfully",
-        description: "We'll get back to you within 24 hours. Check your email for a confirmation.",
+        title: "Mensaje Enviado Exitosamente",
+        description: "Te responderemos dentro de 24 horas. Revisa tu correo para una confirmación.",
       });
       form.reset();
       queryClient.invalidateQueries({ queryKey: ['/api/contact'] });
     },
     onError: (error: any) => {
       toast({
-        title: "Failed to Send Message",
-        description: error.message || "Please try again or contact us directly.",
+        title: "Error al Enviar Mensaje",
+        description: error.message || "Por favor intenta de nuevo o contáctanos directamente.",
         variant: "destructive",
       });
     },
@@ -73,72 +73,72 @@ export default function Contact() {
   const contactMethods = [
     {
       id: "phone",
-      title: "Phone Support",
-      description: "Speak with a recovery specialist",
+      title: "Soporte Telefónico",
+      description: "Habla con un especialista en recuperación",
       contact: "(555) 123-4567",
-      availability: "Mon-Fri: 8am-6pm PST",
+      availability: "Lun-Vie: 8am-6pm PST",
       icon: Phone,
       color: "text-blue-600",
       bgColor: "bg-blue-50",
-      action: "Call Now"
+      action: "Llamar Ahora"
     },
     {
       id: "email",
-      title: "Email Support",
-      description: "Send us your questions",
+      title: "Soporte por Email",
+      description: "Envíanos tus preguntas",
       contact: "support@recoverypath.com",
-      availability: "Response within 24 hours",
+      availability: "Respuesta en 24 horas",
       icon: Mail,
       color: "text-green-600",
       bgColor: "bg-green-50",
-      action: "Send Email"
+      action: "Enviar Email"
     },
     {
       id: "chat",
-      title: "Live Chat",
-      description: "Chat with our support team",
-      contact: "Available now",
-      availability: "Mon-Fri: 9am-5pm PST",
+      title: "Chat en Vivo",
+      description: "Chatea con nuestro equipo de apoyo",
+      contact: "Disponible ahora",
+      availability: "Lun-Vie: 9am-5pm PST",
       icon: MessageCircle,
       color: "text-purple-600",
       bgColor: "bg-purple-50",
-      action: "Start Chat"
+      action: "Iniciar Chat"
     },
     {
       id: "video",
-      title: "Video Consultation",
-      description: "Schedule a virtual meeting",
-      contact: "30-minute sessions",
-      availability: "By appointment",
+      title: "Consulta por Video",
+      description: "Programa una reunión virtual",
+      contact: "Sesiones de 30 minutos",
+      availability: "Con cita previa",
       icon: Video,
       color: "text-orange-600",
       bgColor: "bg-orange-50",
-      action: "Schedule Now"
+      action: "Programar Ahora"
     }
   ];
 
   const quickResources = [
     {
-      title: "Frequently Asked Questions",
-      description: "Find answers to common questions about recovery",
+      title: "Preguntas Frecuentes",
+      description: "Encuentra respuestas a preguntas comunes sobre recuperación",
       icon: HelpCircle,
       href: "#faq"
     },
     {
-      title: "Medical Terms Glossary",
-      description: "Understand medical terminology and procedures",
+      title: "Glosario de Términos Médicos",
+      description: "Entiende la terminología médica y procedimientos",
       icon: FileText,
       href: "#glossary"
     },
     {
-      title: "Patient Forms & Documents",
-      description: "Access forms and important documents",
+      title: "Formularios y Documentos del Paciente",
+      description: "Accede a formularios y documentos importantes",
       icon: FileText,
       href: "#forms"
     },
     {
-      title: "Insurance & Billing Help",
-      description: "Get assistance with insurance and billing questions",
+      title: "Ayuda con Seguros y Facturación",
+      description: "Obtén asistencia con preguntas sobre seguros y facturación",
       icon: Shield,
       href: "#insurance"
     }
@@ -162,10 +162,10 @@ export default function Contact() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
-              Get Support When You Need It
+              Obtén Apoyo Cuando lo Necesites
             </h1>
             <p className="text-xl opacity-90 max-w-3xl mx-auto">
-              Our team is here to help you navigate your recovery journey with confidence and support. Reach out through your preferred method.
+              Nuestro equipo está aquí para ayudarte a navegar tu proceso de recuperación con confianza y apoyo. Contáctanos a través de tu método preferido.
             </p>
           </div>
         </div>
@@ -178,10 +178,10 @@ export default function Contact() {
             <AlertTriangle className="h-5 w-5 text-red-800 mr-3 flex-shrink-0" />
             <div className="text-center">
               <p className="text-red-900 font-bold">
-                Emergency: Call 911 | Crisis Support: 988 | Poison Control: 1-800-222-1222
+                Emergencia: Llama 911 | Apoyo en Crisis: 988 | Control de Venenos: 1-800-222-1222
               </p>
               <p className="text-red-800 text-sm font-semibold">
-                For immediate medical emergencies or mental health crises, contact emergency services directly
+                Para emergencias médicas inmediatas o crisis de salud mental, contacta servicios de emergencia directamente
               </p>
             </div>
           </div>
